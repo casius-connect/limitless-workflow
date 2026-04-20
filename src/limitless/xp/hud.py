@@ -17,10 +17,10 @@ def build_status_hud(
     header = f"[Limitless XP Builder | {topic_title} | {_phase_label(phase)} | {target_concept or '-'}]"
     lines = [header]
     if grounding_label:
-        lines.append(f"├─ grounded in: {grounding_label}")
+        lines.append(f"|- grounded in: {grounding_label}")
     lines.extend([
-        "└─ reply normally to continue",
-        "   commands: /hint · /status · /finish",
+        "|- reply normally to continue",
+        "   commands: /hint | /status | /finish",
         f"   hints used: {hints_used}",
         f"   concepts covered: {concepts_covered}",
     ])
