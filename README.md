@@ -4,6 +4,7 @@ A Claude Code-first understanding machine powered by Oracle AI Database.
 
 This workshop repo lets you:
 - connect Oracle AI Database on OCI
+- install the Oracle Python + `langchain-oracledb` integration stack
 - load starter topic packs
 - run a smoke test
 - launch XP Builder from Claude Code

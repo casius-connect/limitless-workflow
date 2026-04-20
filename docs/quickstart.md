@@ -13,7 +13,7 @@ You need:
 
 ## 1. Clone the repo and install dependencies
 
-Clone the repo and install Python dependencies.
+Clone the repo and install Python dependencies. This step is what actually pulls down the Oracle integration packages used by the workshop, including `langchain-oracledb`.
 
 ### macOS
 
@@ -49,7 +49,7 @@ Use `.env.example` as the base and fill in:
 
 ## 3. Run the smoke path
 
-These commands prove your environment is connected and the starter content is loaded.
+These commands prove your environment is connected, the Oracle integration packages are installed, and the starter content is loaded.
 
 ```bash
 python scripts/check_oracle_connection.py
