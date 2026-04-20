@@ -18,7 +18,7 @@ Clone the repo and install Python dependencies.
 ### macOS
 
 ```bash
-git clone <PRIVATE_REPO_URL>
+git clone https://github.com/casius-connect/limitless-workflow.git
 cd limitless-workflow
 python3 -m venv .venv
 source .venv/bin/activate
@@ -28,7 +28,7 @@ python -m pip install -r requirements.txt
 ### Windows
 
 ```powershell
-git clone <PRIVATE_REPO_URL>
+git clone https://github.com/casius-connect/limitless-workflow.git
 cd limitless-workflow
 python -m venv .venv
 .\.venv\Scripts\activate
