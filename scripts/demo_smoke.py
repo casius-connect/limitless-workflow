@@ -40,16 +40,18 @@ def main() -> int:
     pool = get_pool(settings)
     with pool.acquire() as connection:
         with connection.cursor() as cursor:
-            cursor.execute("select count(*) from topics")
+            cursor.execute("select count(*) from topics where slug in ('agent-memory','agent-loop')")
             topic_count = int(cursor.fetchone()[0])
-            cursor.execute("select count(*) from concepts")
+            cursor.execute("select count(*) from concepts c join topics t on t.id = c.topic_id where t.slug in ('agent-memory','agent-loop')")
             concept_count = int(cursor.fetchone()[0])
-            cursor.execute("select count(*) from xp_sessions")
+            cursor.execute("select count(*) from xp_sessions s join topics t on t.id = s.topic_id where t.slug in ('agent-memory','agent-loop')")
             session_count = int(cursor.fetchone()[0])
+            cursor.execute("select slug from topics where slug in ('agent-memory','agent-loop') order by slug")
+            workshop_topics = [row[0] for row in cursor.fetchall()]
 
-    print(f"Oracle topics: {topic_count}")
-    print(f"Oracle concepts: {concept_count}")
-    print(f"Oracle XP sessions: {session_count}")
+    print(f"Workshop topics found: {', '.join(workshop_topics)}")
+    print(f"Workshop concept count: {concept_count}")
+    print(f"Workshop XP sessions: {session_count}")
     print("Skills ready: ai-research, xp-builder, xp-debrief, framework-builder")
     return 0
 
