@@ -70,9 +70,15 @@ Then open Claude Code in the repo root and run:
 
 ## Optional bonus
 
-Open the `Limitless/` vault in Obsidian to inspect:
-- dashboard
-- topic notes
-- Base
-- Canvas
-- graph
+If you want the visual memory-console path:
+
+1. download and install **Obsidian**
+2. open the `Limitless/` folder as a vault
+3. inspect:
+   - dashboard
+   - topic notes
+   - Base
+   - Canvas
+   - graph
+
+If the styling does not appear immediately, go to **Settings -> Appearance -> CSS snippets**, reload snippets, and ensure `limitless-cognitive-vault` is enabled.
