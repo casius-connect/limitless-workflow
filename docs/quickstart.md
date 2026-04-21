@@ -106,6 +106,21 @@ If you’re keeping up, you can debrief the session and inspect the memory updat
 
 Obsidian is optional. It gives you a visual memory console, but it is not required for the core workshop path.
 
+To use the bonus path:
+
+1. download and install **Obsidian**
+2. open the `Limitless/` folder in this repo as a vault
+3. inspect:
+   - `00 Dashboard.md`
+   - `10 Topics/Agent Memory.md`
+   - `Atlas/Concept Tracker.base`
+   - `Atlas/Knowledge Map.canvas`
+
+If the styling does not appear immediately:
+- open **Settings -> Appearance -> CSS snippets**
+- reload snippets
+- ensure `limitless-cognitive-vault` is enabled
+
 ## 8. SQL verification
 
 If you want to verify Oracle state directly, use Database Actions or another SQL client.
