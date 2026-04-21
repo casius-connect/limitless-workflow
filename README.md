@@ -19,6 +19,28 @@ This workshop repo lets you:
 - Claude Code
 - optionally Obsidian for the memory-console bonus path
 
+## How to prepare before the session
+
+For the best workshop experience, attendees should arrive with four things ready:
+
+1. an **OCI Free Tier** account
+2. an **Oracle AI Database** running on OCI
+3. the downloaded **wallet** for that database
+4. the repo cloned locally with `.env` filled in
+
+In practice, the attendee journey is:
+
+- sign up for OCI Free Tier
+- create or access an Oracle AI Database
+- download the wallet from the database connection page
+- clone this repo
+- install dependencies
+- fill in `.env` from `.env.example`
+- run the smoke path
+- launch XP Builder in Claude Code
+
+If attendees do that before the session starts, they should be able to code along instead of spending the live session doing account setup.
+
 ## 5-minute quickstart
 
 Use:

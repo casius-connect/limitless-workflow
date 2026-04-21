@@ -11,6 +11,19 @@ You need:
 - Claude Code
 - optionally Obsidian
 
+## What attendees should do before the live session
+
+For the smoothest code-along experience, try to complete these before the session begins:
+
+- create an **OCI Free Tier** account
+- create or access an **Oracle AI Database** on OCI
+- download the **wallet** for that database
+- clone this repo
+- install Python dependencies
+- fill in `.env` from `.env.example`
+
+If you arrive with those steps already done, you should be able to spend the live session running the workflow instead of doing account setup.
+
 ## 1. Clone the repo and install dependencies
 
 Clone the repo and install Python dependencies. This step is what actually pulls down the Oracle integration packages used by the workshop, including `langchain-oracledb`.
